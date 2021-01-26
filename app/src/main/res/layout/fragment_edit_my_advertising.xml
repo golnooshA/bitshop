@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:layout_margin="@dimen/standard_margin"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:layout_marginBottom="@dimen/short_margin"
+            android:gravity="center">
+
+            <Spinner
+                android:id="@+id/choose_source"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_edit_text"
+                android:entries="@array/currency_source__"
+                android:layout_marginRight="@dimen/edit_text_margin_r_and_l"
+                android:layout_marginLeft="@dimen/edit_text_margin_r_and_l"
+                android:paddingLeft="@dimen/spinner_text_padding" />
+
+            <ImageView
+                android:layout_width="@dimen/login_username_icon_size"
+                android:layout_height="@dimen/login_username_icon_size"
+                android:layout_alignRight="@id/choose_source"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/login_icon_margin_R"
+                android:src="@drawable/bill_type" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/short_margin"
+            android:gravity="center">
+
+            <Spinner
+                android:id="@+id/choose_toggle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_edit_text"
+                android:entries="@array/currency_toggle__"
+                android:paddingLeft="@dimen/spinner_text_padding"
+                android:layout_marginRight="@dimen/edit_text_margin_r_and_l"
+                android:layout_marginLeft="@dimen/edit_text_margin_r_and_l"/>
+
+            <ImageView
+                android:layout_width="@dimen/login_username_icon_size"
+                android:layout_height="@dimen/login_username_icon_size"
+                android:layout_alignRight="@id/choose_toggle"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/login_icon_margin_R"
+                android:src="@drawable/exchange" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/short_margin"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/currency_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_edit_text"
+                android:layout_marginRight="@dimen/edit_text_margin_r_and_l"
+                android:layout_marginLeft="@dimen/edit_text_margin_r_and_l"
+                android:text="1000000"
+                android:inputType="number"
+                android:paddingRight="@dimen/login_username_hint_text_paddingRight"
+                android:paddingLeft="@dimen/standard_margin"
+                android:textColor="@color/login_edittext" />
+
+            <ImageView
+                android:layout_width="@dimen/login_username_icon_size"
+                android:layout_height="@dimen/login_username_icon_size"
+                android:layout_alignRight="@id/currency_number"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/login_icon_margin_R"
+                android:src="@drawable/currency_number" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/short_margin"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/currency_cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_edit_text"
+                android:layout_marginRight="@dimen/edit_text_margin_r_and_l"
+                android:layout_marginLeft="@dimen/edit_text_margin_r_and_l"
+                android:text="152000000"
+                android:inputType="number"
+                android:paddingLeft="@dimen/standard_margin"
+                android:paddingRight="@dimen/login_username_hint_text_paddingRight"
+                android:textColor="@color/login_edittext" />
+
+            <ImageView
+                android:layout_width="@dimen/login_username_icon_size"
+                android:layout_height="@dimen/login_username_icon_size"
+                android:layout_alignRight="@id/currency_cost"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/login_icon_margin_R"
+                android:src="@drawable/cost" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/short_margin"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/currency_expire_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_edit_text"
+                android:layout_marginRight="@dimen/edit_text_margin_r_and_l"
+                android:layout_marginLeft="@dimen/edit_text_margin_r_and_l"
+                android:text="2019-09-17"
+                android:inputType="date|datetime"
+                android:paddingLeft="@dimen/standard_margin"
+                android:paddingRight="@dimen/login_username_hint_text_paddingRight"
+                android:textColor="@color/login_edittext" />
+
+            <ImageView
+                android:layout_width="@dimen/login_username_icon_size"
+                android:layout_height="@dimen/login_username_icon_size"
+                android:layout_alignRight="@id/currency_expire_time"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/login_icon_margin_R"
+                android:src="@drawable/expiry_time" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/short_margin"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/round_edit_text"
+                android:layout_marginRight="@dimen/edit_text_margin_r_and_l"
+                android:layout_marginLeft="@dimen/edit_text_margin_r_and_l"
+                android:text="خریدارم"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingRight="@dimen/login_username_hint_text_paddingRight"
+                android:textColor="@color/login_edittext" />
+
+            <ImageView
+                android:layout_width="@dimen/login_username_icon_size"
+                android:layout_height="@dimen/login_username_icon_size"
+                android:layout_alignRight="@id/explain"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/login_icon_margin_R"
+                android:src="@drawable/text_icon" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/edit_my_advertising"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standard_margin"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:background="@drawable/round_button"
+        android:text="اعمال تغییر"
+        android:textSize="@dimen/button_text_size"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+
+</LinearLayout>

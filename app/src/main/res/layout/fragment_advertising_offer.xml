@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="27">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:background="@drawable/card_shadow"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/edit_text_margin_r_and_l"
+                        android:layout_marginTop="@dimen/short_margin"
+                        android:layout_marginRight="@dimen/edit_text_margin_r_and_l"
+                        android:background="@drawable/round_edit_text"
+                        android:hint="نام و نام خانوادگی"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/standard_margin"
+                        android:paddingRight="@dimen/login_username_hint_text_paddingRight"
+                        android:textColor="@color/login_edittext" />
+
+                    <ImageView
+                        android:layout_width="@dimen/login_username_icon_size"
+                        android:layout_height="@dimen/login_username_icon_size"
+                        android:layout_alignRight="@id/user_name"
+                        android:layout_margin="@dimen/login_username_icon_margin"
+                        android:src="@drawable/user_name" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/user_national_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/edit_text_margin_r_and_l"
+                        android:layout_marginRight="@dimen/edit_text_margin_r_and_l"
+                        android:layout_marginBottom="@dimen/short_margin"
+                        android:background="@drawable/round_edit_text"
+                        android:hint="شماره ملی"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/standard_margin"
+                        android:paddingRight="@dimen/login_username_hint_text_paddingRight"
+                        android:textColor="@color/login_edittext" />
+
+                    <ImageView
+                        android:layout_width="@dimen/login_password_icon_size"
+                        android:layout_height="@dimen/login_password_icon_size"
+                        android:layout_alignRight="@id/user_national_id"
+                        android:layout_marginTop="@dimen/short_margin"
+                        android:layout_marginRight="@dimen/login_username_icon_margin"
+                        android:src="@drawable/icon_customer" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/user_credit_card_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/edit_text_margin_r_and_l"
+                        android:layout_marginRight="@dimen/edit_text_margin_r_and_l"
+                        android:layout_marginBottom="@dimen/short_margin"
+                        android:background="@drawable/round_edit_text"
+                        android:gravity="right"
+                        android:hint="شماره شبا"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/standard_margin"
+                        android:paddingTop="@dimen/login_password_type_padding"
+                        android:paddingRight="@dimen/login_username_hint_text_paddingRight"
+                        android:textColor="@color/login_edittext" />
+
+                    <ImageView
+                        android:layout_width="@dimen/login_password_icon_size"
+                        android:layout_height="@dimen/login_password_icon_size"
+                        android:layout_alignRight="@id/user_credit_card_number"
+                        android:layout_marginTop="@dimen/short_margin"
+                        android:layout_marginRight="@dimen/login_username_icon_margin"
+                        android:src="@drawable/credit_card" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/standard_margin"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/user_public_key"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/edit_text_margin_r_and_l"
+                        android:layout_marginRight="@dimen/edit_text_margin_r_and_l"
+                        android:background="@drawable/round_edit_text"
+                        android:hint="کلید عمومی"
+                        android:inputType="text"
+                        android:paddingLeft="@dimen/standard_margin"
+                        android:paddingRight="@dimen/login_username_hint_text_paddingRight"
+                        android:textColor="@color/login_edittext" />
+
+                    <ImageView
+                        android:layout_width="@dimen/login_username_icon_size"
+                        android:layout_height="@dimen/login_username_icon_size"
+                        android:layout_alignRight="@id/user_public_key"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/login_icon_margin_R"
+                        android:src="@drawable/public_key" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="425dp"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:background="@drawable/card_shadow"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:layout_marginBottom="@dimen/short_margin"
+                    android:gravity="center">
+
+                    <Spinner
+                        android:id="@+id/choose_source"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/edit_text_margin_r_and_l"
+                        android:layout_marginRight="@dimen/edit_text_margin_r_and_l"
+                        android:background="@drawable/round_edit_text"
+                        android:entries="@array/currency_source"
+                        android:paddingLeft="@dimen/spinner_text_padding" />
+
+                    <ImageView
+                        android:layout_width="@dimen/login_username_icon_size"
+                        android:layout_height="@dimen/login_username_icon_size"
+                        android:layout_alignRight="@id/choose_source"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/login_icon_margin_R"
+                        android:src="@drawable/bill_type" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/short_margin"
+                    android:gravity="center">
+
+                    <Spinner
+                        android:id="@+id/choose_toggle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/edit_text_margin_r_and_l"
+                        android:layout_marginRight="@dimen/edit_text_margin_r_and_l"
+                        android:background="@drawable/round_edit_text"
+                        android:entries="@array/currency_toggle"
+                        android:paddingLeft="@dimen/spinner_text_padding" />
+
+                    <ImageView
+                        android:layout_width="@dimen/login_username_icon_size"
+                        android:layout_height="@dimen/login_username_icon_size"
+                        android:layout_alignRight="@id/choose_toggle"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/login_icon_margin_R"
+                        android:src="@drawable/exchange" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/short_margin"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/currency_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/edit_text_margin_r_and_l"
+                        android:layout_marginRight="@dimen/edit_text_margin_r_and_l"
+                        android:background="@drawable/round_edit_text"
+                        android:hint="مقدار"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/standard_margin"
+                        android:paddingRight="@dimen/login_username_hint_text_paddingRight"
+                        android:textColor="@color/login_edittext" />
+
+                    <ImageView
+                        android:layout_width="@dimen/login_username_icon_size"
+                        android:layout_height="@dimen/login_username_icon_size"
+                        android:layout_alignRight="@id/currency_number"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/login_icon_margin_R"
+                        android:src="@drawable/currency_number" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/short_margin"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/currency_cost"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/edit_text_margin_r_and_l"
+                        android:layout_marginRight="@dimen/edit_text_margin_r_and_l"
+                        android:background="@drawable/round_edit_text"
+                        android:hint="نرخ تبدیل"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/standard_margin"
+                        android:paddingRight="@dimen/login_username_hint_text_paddingRight"
+                        android:textColor="@color/login_edittext" />
+
+                    <ImageView
+                        android:layout_width="@dimen/login_username_icon_size"
+                        android:layout_height="@dimen/login_username_icon_size"
+                        android:layout_alignRight="@id/currency_cost"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/login_icon_margin_R"
+                        android:src="@drawable/cost" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/short_margin"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/currency_expire_time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/edit_text_margin_r_and_l"
+                        android:layout_marginRight="@dimen/edit_text_margin_r_and_l"
+                        android:background="@drawable/round_edit_text"
+                        android:hint="تاریخ انقضا"
+                        android:inputType="date"
+                        android:paddingLeft="@dimen/standard_margin"
+                        android:paddingRight="@dimen/login_username_hint_text_paddingRight"
+                        android:textColor="@color/login_edittext" />
+
+                    <ImageView
+                        android:layout_width="@dimen/login_username_icon_size"
+                        android:layout_height="@dimen/login_username_icon_size"
+                        android:layout_alignRight="@id/currency_expire_time"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/login_icon_margin_R"
+                        android:src="@drawable/expiry_time" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/short_margin"
+                    android:gravity="center">
+
+                    <EditText
+                        android:id="@+id/explain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/edit_text_margin_r_and_l"
+                        android:layout_marginRight="@dimen/edit_text_margin_r_and_l"
+                        android:background="@drawable/round_edit_text"
+                        android:hint="توضیحات"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/standard_margin"
+                        android:paddingRight="@dimen/login_username_hint_text_paddingRight"
+                        android:textColor="@color/login_edittext" />
+
+                    <ImageView
+                        android:layout_width="@dimen/login_username_icon_size"
+                        android:layout_height="@dimen/login_username_icon_size"
+                        android:layout_alignRight="@id/explain"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/login_icon_margin_R"
+                        android:src="@drawable/text_icon" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="73"
+        android:gravity="top"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/increase_credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/long_long_margin"
+            android:layout_marginTop="@dimen/long_margin"
+            android:background="@drawable/round_button"
+            android:gravity="center"
+            android:text="افزایش اعتبار"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size" />
+
+        <Button
+            android:id="@+id/send_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/long_margin"
+            android:layout_marginLeft="@dimen/long_long_margin"
+            android:background="@drawable/round_button"
+            android:gravity="center"
+            android:text="ارسال"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+    <!--</FrameLayout>-->

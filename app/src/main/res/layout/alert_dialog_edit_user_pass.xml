@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="ویرایش اطلاعات"
+        android:textColor="@color/material_deep_purple_700"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/long_margin"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:layout_marginLeft="@dimen/standard_margin"
+        android:ems="10"
+        android:hint="نام کاربری"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:layout_marginLeft="@dimen/standard_margin"
+        android:ems="10"
+        android:hint="رمز عبور"
+        android:inputType="textPassword"
+        android:gravity="right"/>
+
+    <EditText
+        android:id="@+id/edit_password_repeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:layout_marginLeft="@dimen/standard_margin"
+        android:ems="10"
+        android:hint="تکرار رمز عبور"
+        android:inputType="textPassword"
+        android:gravity="right"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:layout_marginBottom="@dimen/short_margin"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/round_button"
+        android:text="اعمال تغییرات"
+        android:textColor="@android:color/white" />
+</LinearLayout>

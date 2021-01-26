@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/short_margin"
+        android:layout_marginTop="@dimen/long_margin"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/currency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/edit_text_margin_r_and_l"
+            android:layout_marginRight="@dimen/edit_text_margin_r_and_l"
+            android:background="@drawable/round_edit_text"
+            android:hint="کلید عمومی"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingRight="@dimen/login_username_hint_text_paddingRight"
+            android:paddingLeft="@dimen/standard_margin"
+            android:textColor="@color/login_edittext" />
+
+        <ImageView
+            android:layout_width="@dimen/login_username_icon_size"
+            android:layout_height="@dimen/login_username_icon_size"
+            android:layout_alignRight="@id/currency"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="@dimen/login_icon_margin_R"
+            android:src="@drawable/text_icon" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="73"
+        android:gravity="top">
+
+        <Button
+            android:id="@+id/send_no_rial_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/long_margin"
+            android:background="@drawable/round_button"
+            android:gravity="center"
+            android:text="ارسال"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size" />
+    </RelativeLayout>
+
+</LinearLayout>

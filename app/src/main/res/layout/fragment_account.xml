@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/long_long_margin"
+                android:layout_marginTop="@dimen/long_margin"
+                android:layout_marginRight="@dimen/long_long_margin"
+                android:background="@drawable/card_shadow"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:gravity="right"
+                    android:text="Rial"
+                    android:textColor="@color/material_indigo_400"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/short_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/rial_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="50"
+                        android:gravity="left"
+                        android:hint="15000000"
+                        android:layout_marginLeft="@dimen/short_short_margin"
+                        android:layout_marginRight="@dimen/short_short_margin"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="50"
+                        android:gravity="right"
+                        android:text="موجودی"
+                        android:layout_marginLeft="@dimen/short_short_margin"
+                        android:layout_marginRight="@dimen/short_short_margin"/>
+
+                </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/rial_amount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="right"
+                        android:hint="مقدار درخواستی"
+                        android:inputType="number"
+                        android:textSize="@dimen/text_size"
+                        android:layout_marginLeft="@dimen/standard_margin"
+                        android:layout_marginRight="@dimen/standard_margin"
+                        android:layout_marginTop="@dimen/short_margin"/>
+                <EditText
+                    android:id="@+id/rial_sheba"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:hint="شبا"
+                    android:textSize="@dimen/text_size"
+                    android:inputType="number"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/short_margin"/>
+
+
+                <Button
+                    android:id="@+id/rial_recive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_marginBottom="@dimen/short_short_margin"
+                    android:background="@drawable/round_button"
+                    android:text="دریافت"
+                    android:textSize="@dimen/button_text_size"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/long_long_margin"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/long_long_margin"
+                android:background="@drawable/card_shadow"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:gravity="right"
+                    android:text="Ethereum"
+                    android:textColor="@color/material_indigo_400"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/short_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/ethereum_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="50"
+                        android:gravity="left"
+                        android:hint="0"
+                        android:layout_marginLeft="@dimen/short_short_margin"
+                        android:layout_marginRight="@dimen/short_short_margin"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="50"
+                        android:gravity="right"
+                        android:text="موجودی"
+                        android:layout_marginLeft="@dimen/short_short_margin"
+                        android:layout_marginRight="@dimen/short_short_margin"/>
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/ethereum_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:hint="مقدار درخواستی"
+                    android:inputType="number"
+                    android:textSize="@dimen/text_size"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/short_margin"/>
+                <EditText
+                    android:id="@+id/ethereum_sheba"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:hint="کلید عمومی"
+                    android:textSize="@dimen/text_size"
+                    android:inputType="number"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/short_margin"/>
+
+
+                <Button
+                    android:id="@+id/ethereum_recive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_marginBottom="@dimen/short_short_margin"
+                    android:background="@drawable/round_button"
+                    android:text="دریافت"
+                    android:textSize="@dimen/button_text_size"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/long_long_margin"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/long_long_margin"
+                android:background="@drawable/card_shadow"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:gravity="right"
+                    android:text="BitCoin"
+                    android:textColor="@color/material_indigo_400"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/short_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/bitCoin_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="50"
+                        android:gravity="left"
+                        android:hint="1"
+                        android:layout_marginLeft="@dimen/short_short_margin"
+                        android:layout_marginRight="@dimen/short_short_margin"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="50"
+                        android:gravity="right"
+                        android:text="موجودی"
+                        android:layout_marginLeft="@dimen/short_short_margin"
+                        android:layout_marginRight="@dimen/short_short_margin"/>
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/bitCoin_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:hint="مقدار درخواستی"
+                    android:inputType="number"
+                    android:textSize="@dimen/text_size"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/short_margin"/>
+                <EditText
+                    android:id="@+id/bitCoin_sheba"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:hint="کلید عمومی"
+                    android:textSize="@dimen/text_size"
+                    android:inputType="number"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/short_margin"/>
+
+
+                <Button
+                    android:id="@+id/bitCoin_recive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_marginBottom="@dimen/short_short_margin"
+                    android:background="@drawable/round_button"
+                    android:text="دریافت"
+                    android:textSize="@dimen/button_text_size"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/long_long_margin"
+                android:layout_marginTop="@dimen/standard_margin"
+                android:layout_marginRight="@dimen/long_long_margin"
+                android:background="@drawable/card_shadow"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:gravity="right"
+                    android:text="ZedCash"
+                    android:textColor="@color/material_indigo_400"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/short_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/zedcash_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="50"
+                        android:gravity="left"
+                        android:hint="0"
+                        android:layout_marginLeft="@dimen/short_short_margin"
+                        android:layout_marginRight="@dimen/short_short_margin"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="50"
+                        android:gravity="right"
+                        android:text="موجودی"
+                        android:layout_marginLeft="@dimen/short_short_margin"
+                        android:layout_marginRight="@dimen/short_short_margin"/>
+
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/zedcash_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:hint="مقدار درخواستی"
+                    android:inputType="number"
+                    android:textSize="@dimen/text_size"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/short_margin"/>
+                <EditText
+                    android:id="@+id/zedcash_sheba"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="right"
+                    android:hint="کلید عمومی"
+                    android:textSize="@dimen/text_size"
+                    android:inputType="number"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_marginTop="@dimen/short_margin"/>
+
+
+                <Button
+                    android:id="@+id/zedcash_recive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/standard_margin"
+                    android:layout_marginLeft="@dimen/standard_margin"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_marginBottom="@dimen/short_short_margin"
+                    android:background="@drawable/round_button"
+                    android:text="دریافت"
+                    android:textSize="@dimen/button_text_size"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="90"/>
+
+</LinearLayout>

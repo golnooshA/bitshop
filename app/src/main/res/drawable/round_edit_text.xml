@@ -1,0 +1,26 @@
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--    <item>-->
+<!--        <shape android:shape="rectangle">-->
+<!--            <stroke android:color="@color/purple" android:width="2dp" />-->
+<!--            <size android:width="@dimen/login_edittext_w"-->
+<!--                android:height="@dimen/login_edittext_h"/>-->
+<!--            <corners android:bottomRightRadius="@dimen/edittext_corners_size"-->
+<!--                android:bottomLeftRadius="@dimen/edittext_corners_size"-->
+<!--                android:topRightRadius="@dimen/edittext_corners_size"-->
+<!--                android:topLeftRadius="@dimen/edittext_corners_size"/>-->
+<!--        </shape>-->
+<!--    </item>-->
+<!--</selector>-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <stroke android:color="@color/purple" android:width="2dp" />
+            <size android:width="@dimen/login_edittext_w"
+                android:height="@dimen/login_edittext_h"/>
+            <corners android:bottomRightRadius="20dp"
+                android:bottomLeftRadius="0dp"
+                android:topRightRadius="0dp"
+                android:topLeftRadius="20dp"/>
+        </shape>
+    </item>
+</selector>

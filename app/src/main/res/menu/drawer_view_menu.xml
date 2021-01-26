@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--<group>-->
+        <!--<item-->
+            <!--android:id="@+id/my_chat"-->
+            <!--android:title="چت های من"-->
+            <!--android:icon="@drawable/my_message"/>-->
+        <!--<item-->
+            <!--android:id="@+id/my_advertis"-->
+            <!--android:title="آگهی های من"-->
+            <!--android:icon="@drawable/my_commercial"/>-->
+        <!--<item-->
+            <!--android:id="@+id/star"-->
+            <!--android:title="نشان شده ها"-->
+            <!--android:icon="@drawable/icons_rating"/>-->
+        <!--<item-->
+            <!--android:id="@+id/edit_profile"-->
+            <!--android:title="ویرایش اطلاعات"-->
+            <!--android:icon="@drawable/edit"/>-->
+
+        <!--<item-->
+            <!--android:id="@+id/exit"-->
+            <!--android:title="خروج"-->
+            <!--android:icon="@drawable/icon_exit"/>-->
+    <!--</group>-->
+    <group>
+        <item
+            android:id="@+id/all_advertis"
+            android:title="آگهی ها"
+            android:icon="@drawable/my_message"/>
+        <item
+            android:id="@+id/set_offer"
+            android:title="پیشنهاد فروش"
+            android:icon="@drawable/my_commercial"/>
+
+        <item
+            android:id="@+id/my_advertise"
+            android:title="آگهی من"
+            android:icon="@drawable/message"/>
+
+        <item
+            android:id="@+id/account"
+            android:title="اعتبار"
+            android:icon="@drawable/wallet"/>
+
+        <item
+            android:id="@+id/more_option"
+            android:title="بیشتر"
+            android:icon="@drawable/more"/>
+
+    </group>
+</menu>

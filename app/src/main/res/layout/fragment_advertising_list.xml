@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/long_margin">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/long_margin"
+                android:layout_marginBottom="@dimen/short_short_margin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_weight="50"
+                    android:text="مقصد"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/standard_margin"
+                    android:layout_weight="50"
+                    android:text="مبدا"
+                    android:textSize="@dimen/text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/standard_margin">
+
+                <Spinner
+                    android:id="@+id/currency_torget"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/short_margin"
+                    android:layout_marginRight="@dimen/short_short_margin"
+                    android:layout_weight="50"
+                    android:background="@drawable/round_edit_text"
+                    android:entries="@array/currency_source"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/spinner_text_padding"
+                    android:textColor="@color/light_gray" />
+
+                <Spinner
+                    android:id="@+id/currency_source"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="@dimen/short_short_margin"
+                    android:layout_marginRight="@dimen/short_margin"
+                    android:layout_weight="50"
+                    android:background="@drawable/round_edit_text"
+                    android:entries="@array/currency_source"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/spinner_text_padding"
+                    android:textColor="@color/light_gray" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="50"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:layout_marginBottom="50dp"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

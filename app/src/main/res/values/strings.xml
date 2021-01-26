@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">BitShop</string>
+
+    <string name="open_navigation">باز</string>
+    <string name="close_navigation">بسته</string>
+
+    <string-array name="currency_source">
+        <item>Source</item>
+        <item>BitCoin</item>
+        <item>Ethereum</item>
+        <item>ZedCash</item>
+        <item>Rial</item>
+    </string-array>
+
+    <string-array name="currency_toggle">
+        <item>Torget</item>
+        <item>BitCoin</item>
+        <item>Ethereum</item>
+        <item>ZedCash</item>
+        <item>Rial</item>
+    </string-array>
+
+    <string-array name="currency_source__">
+        <item>Rial</item>
+        <item>BitCoin</item>
+        <item>Ethereum</item>
+        <item>ZedCash</item>
+    </string-array>
+
+    <string-array name="currency_toggle__">
+        <item>BitCoin</item>
+        <item>Rial</item>
+        <item>Ethereum</item>
+        <item>ZedCash</item>
+    </string-array>
+
+</resources>

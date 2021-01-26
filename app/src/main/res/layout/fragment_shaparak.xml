@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/long_margin">
+
+        <EditText
+            android:id="@+id/user_credit_card_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/short_margin"
+            android:layout_marginRight="@dimen/edit_text_margin_r_and_l"
+            android:layout_marginLeft="@dimen/edit_text_margin_r_and_l"
+            android:background="@drawable/round_edit_text"
+            android:gravity="right"
+            android:hint="شماره کارت"
+            android:inputType="number"
+            android:paddingTop="@dimen/login_password_type_padding"
+            android:paddingRight="@dimen/login_username_hint_text_paddingRight"
+            android:paddingLeft="@dimen/standard_margin"
+            android:textColor="@color/login_edittext" />
+
+        <ImageView
+            android:layout_width="@dimen/login_password_icon_size"
+            android:layout_height="@dimen/login_password_icon_size"
+            android:layout_alignRight="@id/user_credit_card_number"
+            android:layout_marginTop="@dimen/short_margin"
+            android:layout_marginRight="@dimen/login_username_icon_margin"
+            android:src="@drawable/credit_card" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/second_card_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/short_margin"
+            android:layout_marginRight="@dimen/edit_text_margin_r_and_l"
+            android:layout_marginLeft="@dimen/edit_text_margin_r_and_l"
+            android:background="@drawable/round_edit_text"
+            android:gravity="right"
+            android:hint="رمز دوم"
+            android:inputType="number"
+            android:paddingTop="@dimen/login_password_type_padding"
+            android:paddingRight="@dimen/login_username_hint_text_paddingRight"
+            android:paddingLeft="@dimen/standard_margin"
+            android:textColor="@color/login_edittext" />
+
+        <ImageView
+            android:layout_width="@dimen/login_password_icon_size"
+            android:layout_height="@dimen/login_password_icon_size"
+            android:layout_alignRight="@id/second_card_password"
+            android:layout_marginTop="@dimen/short_margin"
+            android:layout_marginRight="@dimen/login_username_icon_margin"
+            android:src="@drawable/second_password" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/cvv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/short_margin"
+            android:layout_marginRight="@dimen/edit_text_margin_r_and_l"
+            android:layout_marginLeft="@dimen/edit_text_margin_r_and_l"
+            android:background="@drawable/round_edit_text"
+            android:gravity="right"
+            android:hint="CVV2"
+            android:inputType="number"
+            android:paddingTop="@dimen/login_password_type_padding"
+            android:paddingRight="@dimen/login_username_hint_text_paddingRight"
+            android:paddingLeft="@dimen/standard_margin"
+            android:textColor="@color/login_edittext" />
+
+        <ImageView
+            android:layout_width="@dimen/login_password_icon_size"
+            android:layout_height="@dimen/login_password_icon_size"
+            android:layout_alignRight="@id/cvv2"
+            android:layout_marginTop="@dimen/short_margin"
+            android:layout_marginRight="@dimen/login_username_icon_margin"
+            android:src="@drawable/cvv_two" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="73"
+        android:gravity="top">
+
+        <Button
+            android:id="@+id/send_rial_offer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/long_margin"
+            android:background="@drawable/round_button"
+            android:gravity="center"
+            android:text="ارسال"
+            android:textColor="@color/white"
+            android:textSize="@dimen/button_text_size" />
+    </RelativeLayout>
+
+</LinearLayout>

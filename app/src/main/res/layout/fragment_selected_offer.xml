@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/long_long_margin"
+        android:layout_marginTop="@dimen/standard_margin"
+        android:layout_marginRight="@dimen/long_long_margin"
+        android:background="@drawable/card_shadow"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/recycler_imageview"
+            android:layout_height="@dimen/recycler_imageview"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/short_margin"
+            android:src="@drawable/image_recycler" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/source_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:layout_weight="10"
+                android:gravity="left"
+                android:hint="Ethereum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:layout_weight="10"
+                android:gravity="right"
+                android:text="مبدا" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/short_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/torget_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:layout_weight="10"
+                android:gravity="left"
+                android:hint="Rial" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:layout_weight="10"
+                android:gravity="right"
+                android:text="مقصد" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/short_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/currency_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:layout_weight="10"
+                android:gravity="left"
+                android:hint="3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:layout_weight="10"
+                android:gravity="right"
+                android:text="مقدار" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/short_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/currency_cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:layout_weight="10"
+                android:gravity="left"
+                android:hint="45000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:layout_weight="10"
+                android:gravity="right"
+                android:text="نرخ تبدیل" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/short_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/expire_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:layout_weight="10"
+                android:gravity="left"
+                android:hint="2019-09-14" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:layout_weight="10"
+                android:gravity="right"
+                android:text="تاریخ انقضا" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/short_margin"
+            android:layout_marginBottom="@dimen/short_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/explain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/standard_margin"
+                android:layout_weight="10"
+                android:gravity="left"
+                android:hint="dddddddddd" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/standard_margin"
+                android:layout_weight="10"
+                android:gravity="right"
+                android:text="توضیحات" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/selected_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standard_margin"
+        android:layout_marginRight="@dimen/standard_margin"
+        android:background="@drawable/round_button"
+        android:text="خرید"
+        android:textSize="@dimen/button_text_size"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="108dp"/>
+
+
+
+</LinearLayout>

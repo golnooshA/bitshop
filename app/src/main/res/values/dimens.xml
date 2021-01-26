@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="short_short_margin">8dp</dimen>
+    <dimen name="short_margin">12dp</dimen>
+    <dimen name="standard_margin">16dp</dimen>
+    <dimen name="long_margin">36dp</dimen>
+    <dimen name="long_long_margin">50dp</dimen>
+
+    <dimen name="edittext_corners_size">50dp</dimen>
+
+    <dimen name="round_button_w">95dp</dimen>
+    <dimen name="round_button_h">45dp</dimen>
+    <dimen name="button_text_size">16sp</dimen>
+
+    <dimen name="login_edittext_w">300dp</dimen>
+    <dimen name="login_edittext_h">55dp</dimen>
+    <dimen name="login_logo_w">300dp</dimen>
+    <dimen name="login_logo_h">100dp</dimen>
+    <dimen name="login_title_text_size">36sp</dimen>
+    <dimen name="login_edittext_top_margin">250dp</dimen>
+    <dimen name="login_username_icon_size">30dp</dimen>
+    <dimen name="login_password_icon_size">30dp</dimen>
+    <dimen name="login_username_hint_text_paddingRight">60dp</dimen>
+    <dimen name="login_password_type_padding">18dp</dimen>
+    <dimen name="login_username_icon_margin">25dp</dimen>
+    <dimen name="login_round_button_w">100dp</dimen>
+    <dimen name="login_round_button_h">30dp</dimen>
+    <dimen name="spinner_text_padding">10dp</dimen>
+    <dimen name="login_icon_margin_R">25dp</dimen>
+
+    <dimen name="navigation_header_h">150dp</dimen>
+    <dimen name="navigation_cardview">250dp</dimen>
+    <dimen name="navigation_text_size">20sp</dimen>
+    <dimen name="toolbar_size">60dp</dimen>
+    <dimen name="toolbar_text_size">20sp</dimen>
+    <dimen name="navigation_profile_photo_size">70dp</dimen>
+    <dimen name="navigation_profile_photo_standard_margin">20dp</dimen>
+
+    <dimen name="recycler_imageview">50dp</dimen>
+
+    <dimen name="text_size">14sp</dimen>
+    <dimen name="selected_offer_text_size">20sp</dimen>
+
+    <dimen name="reyleriew_margin_button">45dp</dimen>
+    <dimen name="edit_text_margin_r_and_l">50dp</dimen>
+
+
+</resources>
